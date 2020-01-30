@@ -1,0 +1,87 @@
+==================================================================================================
+===Exercicio 3
+==================================================================================================
+PROJECT = Aula111019
+PACKAGE = Exercicio3
+CLASS = Principal
+CLASS = ComparaNumero
+CLASS = MenorMaior
+==================================================================================================
+
+
+==================================================================================================
+CLASS = Principal
+==================================================================================================
+package Exercicio3;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {	
+
+		int v1,v2;
+		Scanner teclado = new Scanner(System.in);
+		
+		System.out.println("Informe o primeiro numero:");
+		v1 = teclado.nextInt();
+		
+		System.out.println("Informe o segundo numero:");
+		v2 = teclado.nextInt();
+		
+		ComparaNumero comparaNumero = new ComparaNumero();
+		comparaNumero.CompNumero(v1, v2);
+	
+		MenorMaior menorMaior = new MenorMaior();
+		menorMaior.menorMaior(v1, v2);
+				
+	}
+}
+
+==================================================================================================
+
+
+==================================================================================================
+CLASS = ComparaNumero
+==================================================================================================
+package Exercicio3;
+
+public class ComparaNumero {
+
+	public void CompNumero(int v1,int v2) {
+		
+		
+		if(v1==v2) {System.out.println("Os dois numeros são Identicos!");
+		}
+		else {System.out.println("Os dois numeros Não são Identicos!");
+		
+			
+			
+		}
+	}
+}
+
+
+==================================================================================================
+
+
+==================================================================================================
+CLASS = MenorMaior
+==================================================================================================
+package Exercicio3;
+
+public class MenorMaior {
+
+	public void menorMaior(int v1,int v2) {
+	
+		if(v1!=v2) {
+			if(v1>v2) {System.out.println("Maior numero:"+v1);
+			System.out.println("Menor numero:"+v2);
+			}
+			else {System.out.println("Maior numero:"+v2);
+			System.out.println("Menor numero:"+v1);
+			}
+		}
+	}
+}
+==================================================================================================

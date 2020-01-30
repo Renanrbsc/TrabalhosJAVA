@@ -1,0 +1,257 @@
+EXERCICIOS AULA 06/09/2019 POO -> PROGRAMACAO ORIENTADA OBJETO -- RENAN BERTI
+-- SISTEMAS DE INFORMACAO -- 
+-------------------------------------------------------------------------------------
+
+
+
+
+
+--------------------------MENU ESTADO CIVIL------------------------------------------
+
+
+
+package menuEstadoCivil;
+import java.util.Scanner;
+public class menuEstadoCivil {
+
+	    public static void main (String[]args){
+	        
+	        System.out.println("Escolha uma opçao!");
+	        System.out.println("1 - Solteiro(a)");
+	        System.out.println("2 - Desquitado(a)");
+	        System.out.println("3 - Casado(a)");
+	        System.out.println("4 - Divorciado(a)");
+	        System.out.println("5 - Viuva(a)");
+	       
+	        
+	        int numOpcao;
+	      
+	                
+	                       
+	       Scanner scanner = new Scanner(System.in);
+	        
+	        System.out.println("Digite a opcao!");
+
+	        numOpcao = scanner.nextInt(); 
+	        
+	        switch (numOpcao){
+	        	      
+	        case 1:
+	         System.out.println("Sua opcao é: 1 - Solteiro(a) ");
+	         break;
+	        case 2:
+	         System.out.println("Sua opcao é: 2 - Desquitado(a)");
+	         break;
+	        case 3:
+	         System.out.println("Sua opcao é: 3 - Casado(a) ");
+	         break;
+	        case 4:
+	         System.out.println("Sua opcao é: 4 - Divorciado(a) ");
+	         break;
+	        case 5:
+	         System.out.println("Sua opcao é: 5 - Viuva(a) ");
+	         break;
+	        default:
+	         System.out.println("Opcao inexistente!");
+	         break;
+	        }
+	        
+	    }
+	    
+	}
+
+
+
+ ----------------------------------CALCULO SALARIO BRUTO MENSAL--------------------------------------------------
+
+import java.util.Scanner;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args){
+        
+        String nomeFuncionario;
+        double salHr, hrTrab, salBruto, salLiquido;
+        double diasTrab = 30 ;
+        double inss = 1.10;
+        
+        Scanner entradaDados = new Scanner(System.in);
+        
+        System.out.println("Programa Folha Pagamento");
+        System.out.println("Calculo do Salario Bruto e Liquido!");
+        System.out.println("\nNome do Funcionario:");
+        nomeFuncionario = entradaDados.next(); 
+        
+        System.out.println("Informe as horas trabalhadas; ");
+        hrTrab = entradaDados.nextDouble();
+        
+        System.out.println("Informe o valor hora trabalhada; ");
+        salHr = entradaDados.nextDouble();
+        
+        
+        salBruto = (hrTrab * diasTrab * salHr);
+        
+        salLiquido = (salBruto - inss);
+        
+        System.out.println("\n\n:::Exibiçao dos dados informados::::");
+        System.out.println("Funcionario: "+nomeFuncionario);
+        System.out.println("Salario Bruto: R$ "+salBruto);
+        System.out.println("\nSalario Liquido: R$ "+salLiquido);
+        
+        
+    }
+}
+
+
+
+--------------------------------NOTA MEDIA FINAL---------------------------------------------------------
+
+
+package exercicios;
+import java.util.Scanner;
+public class mediaAula {
+
+	
+	public static void main(String[] args){
+		int n1,n2,n3;
+	int nota;
+	
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	System.out.println("Digite a nota primeira prova");
+	n1 = scanner.nextInt();
+	
+	System.out.println("Digite a nota segunda prova");
+	n2 = scanner.nextInt();
+	
+	System.out.println("Digite a nota terceira prova");
+	n3 = scanner.nextInt();
+	
+	nota = (n1 + n2 + n3)/3;
+	
+	
+	if (nota < 4){	System.out.println("reprovado!");}
+	else if (nota >6){	System.out.println("Aprovado!");}
+	else {	System.out.println("Exame!");}
+
+	
+	}
+	
+}
+
+
+---------------------IDENTIFICANDO O MAIOR VALOR E POSICAO----------------------------------------------------
+
+package Exercicios;
+import java.util.Scanner;
+public class Exercicio4 {
+
+	public static void main(String[]args) {
+		
+
+	int n1,n2,n3;
+	
+	
+	Scanner scanner = new Scanner(System.in);
+	
+	
+	System.out.println("Digite a primeira prova!");
+	n1 = scanner.nextInt();
+	
+	System.out.println("Digite a segunda prova!");
+	n2 = scanner.nextInt();
+	
+	System.out.println("Digite a terceira prova!");
+	n3 = scanner.nextInt();
+	
+		
+	
+		if (n1 > n2 && n1 > n3){System.out.println("Maior nota é:"+n1); 
+								System.out.println("Primeira nota digitada!");
+		}
+	
+		else if (n2 > n1 && n2 > n3){System.out.println("Maior nota é:"+n2); 
+								System.out.println("Segunda nota digitada!");
+		}
+	
+		else if (n3 > n1 && n3 > n2){System.out.println("Maior nota é:"+n3); 
+								System.out.println("Terceira nota digitada!");
+		}
+	
+		else {System.out.println("As notas sao identicas!");
+		}
+	}
+}
+	
+---------------IDENTIFICANDO VALOR MENOR E MENOR----------------------------------------------------
+
+package Exercicios;
+
+import java.util.Scanner;
+
+public class Exercicio5 {
+
+	public static void main(String[]args) {
+		
+
+		int n1,n2,n3;
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		
+		System.out.println("Digite a primeira prova!");
+		n1 = scanner.nextInt();
+		
+		System.out.println("Digite a segunda prova!");
+		n2 = scanner.nextInt();
+		
+		System.out.println("Digite a terceira prova!");
+		n3 = scanner.nextInt();
+		
+			
+		
+			if (n1 > n2 && n1 > n3){System.out.println("Maior nota é:"+n1); 
+								System.out.println("Primeira nota digitada!");
+			}
+		
+			else if (n2 > n1 && n2 > n3){System.out.println("Maior nota é:"+n2); 
+								System.out.println("Segunda nota digitada!");
+			}
+		
+			else if (n3 > n1 && n3 > n2){System.out.println("Maior nota é:"+n3); 
+								System.out.println("Terceira nota digitada!");
+			}
+		
+			else {System.out.println("Maior nota contem valor repetido!");
+			}
+			
+			if (n1 < n2 && n1 < n3){System.out.println("Menor nota é:"+n1); 
+								System.out.println("Primeira nota digitada!");
+			}
+
+			else if (n2 < n1 && n2 < n3){System.out.println("Menor nota é:"+n2); 
+			 	 				System.out.println("Segunda nota digitada!");
+			}
+
+			else if (n3 < n1 && n3 < n2){System.out.println("Menor nota é:"+n3); 
+								System.out.println("Terceira nota digitada!");
+			}
+			else {System.out.println("Menor nota contem valor repetido!");
+			}
+
+	}
+}
+	
+
+
+
+
+
+
+
+    
+
+
+

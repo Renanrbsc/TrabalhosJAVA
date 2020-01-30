@@ -1,0 +1,65 @@
+==================================================================================================
+===Exercicio 1
+==================================================================================================
+PROJECT = Aula111019
+PACKAGE = Exercicio1
+CLASS = Principal
+CLASS = MaiorNumero
+==================================================================================================
+
+
+==================================================================================================
+CLASS = Principal
+==================================================================================================
+package Exercicio1;
+
+public class Principal { // classe principal
+	
+	public static void main (String args[]) { // metodo principal de inicialização
+
+		MaiorNumero maiorNumero; // definindo variavel para chamar classe secundaria
+		
+		maiorNumero = new MaiorNumero(); // definindo que a variavel é um novo objeto
+						 //(pode-se definir quantos quiser)
+		
+		maiorNumero.digitar2num(); // chamando metodo da classe secundaria que com o procedimento
+	
+	}
+	
+}
+==================================================================================================
+
+
+==================================================================================================
+CLASS = MaiorNumero
+==================================================================================================
+package Exercicio1;
+
+import java.util.Scanner; //biblioteca Scanner na classe secundaria
+
+public class MaiorNumero { // classe secundaria
+
+	int v1, v2;
+	Scanner teclado = new Scanner(System.in);
+	
+		public void digitar2num(){ //metodo de digitar valores e condição do maior numero
+			
+			
+		
+			System.out.println("Informe Primeiro numero");	
+			v1 = teclado.nextInt();
+	
+			System.out.println("Informe segundo numero");	
+			v2 = teclado.nextInt();
+			
+			
+			if(v1 > v2) {	System.out.println("Maior numero é: "+v1);
+			}
+			
+			else {System.out.println("Maior numero é: "+v2);
+			}
+
+		}
+	
+}
+==================================================================================================	

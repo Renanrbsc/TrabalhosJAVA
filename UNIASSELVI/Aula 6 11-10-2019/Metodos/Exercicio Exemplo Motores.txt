@@ -1,0 +1,62 @@
+==================================================================================================
+===Exercicio Exemplo de Orientaçao Objeto
+==================================================================================================
+PROJECT = Aula111019
+PACKAGE = ExercicioExemplo
+CLASS = Principal
+CLASS = novo_motor
+==================================================================================================
+
+
+==================================================================================================
+CLASS = Principal
+==================================================================================================
+package ExercicioExemplo;
+
+public class Principal {
+
+	public static void main(String[] args) {	
+	
+		novo_motor motores = new novo_motor();
+            
+            System.out.println("exemplos de programaçao orientada objeto");
+            System.out.println("========================================");
+            System.out.println("O fabricante do motor é: "+motores.fab);
+
+        motores.ligaMotor(12);
+        System.out.println("A velocidade esta em: "+motores.vel);
+        
+        
+        motores.desligaMotor(0);
+        System.out.println("========================================");
+
+        
+	}
+}
+
+==================================================================================================
+
+
+==================================================================================================
+CLASS = novo_motor
+==================================================================================================
+package ExercicioExemplo;
+
+public class novo_motor {
+	
+	String fab = "Ford";
+	    
+	int vel = 80;
+	    
+	    void ligaMotor(int volt){
+	        System.out.println("Com o motor ligado, a voltagem é de "+volt);
+	    }
+	            
+	    void desligaMotor(int volt){
+	        System.out.println("A voltagem é de "+volt);
+	    	System.out.println("O motor sera desligado! ");
+	    }
+	    
+}
+
+==================================================================================================	

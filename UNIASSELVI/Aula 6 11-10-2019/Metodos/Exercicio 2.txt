@@ -1,0 +1,64 @@
+==================================================================================================
+===Exercicio 2
+==================================================================================================
+PROJECT = Aula111019
+PACKAGE = Exercicio2
+CLASS = Principal
+CLASS = OrdemDecrescente
+==================================================================================================
+
+
+==================================================================================================
+CLASS = Principal
+==================================================================================================
+package Exercicio2;
+
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {	
+
+		Scanner teclado = new Scanner(System.in);
+		int v1;
+		
+        	System.out.println("========================================");
+			System.out.println("Informe um numero:");
+			v1 = teclado.nextInt();
+        	System.out.println("========================================");
+        		System.out.println("Ordem Decrescente");
+			OrdemDecrescente Ordenar = new OrdemDecrescente();
+			Ordenar.decrescente(v1);
+        	System.out.println("========================================");
+		
+	}
+		
+}
+==================================================================================================
+
+
+==================================================================================================
+CLASS = OrdemDecrescente
+==================================================================================================
+package Exercicio2;
+
+import java.util.Scanner;
+
+public class OrdemDecrescente {
+
+	public void decrescente(int v1) {
+		
+		int v2;
+		
+		//Ordem decrescente
+		v2 = v1;
+		for(int i = 0;i<v1;i++) {//contador crescente
+			System.out.println("numero:"+v2);
+			v2 = v2 - 1; //variavel numerica decrescente
+		}
+
+	}
+	
+}
+
+==================================================================================================

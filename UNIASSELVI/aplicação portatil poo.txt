@@ -1,0 +1,13 @@
+Aplicação Portátil ou Mobile: 
+Começando pela importância da OO, nesse ramo o objeto tem ganhado muita força da indústria de programação, atualmente toda grande empresa Mobile é estruturada nesse método para portátil, pois se tem um melhor manuseio dos objetos em seus scripts e designs de aplicação.
+
+É um campo de grande variedade nas linguagens OO, por conta disso, é necessario estar se atualizando com base a programação que está em alta no momento.
+
+Nativo e Hibrido:
+Aplicativos nativos são desenvolvidos com as linguagens de programação nativas do sistema operacional, pelo proprio SDK, sua vantagem que tem acesso as funcionalidades do sistema de forma facilitada.
+
+Já os aplicativos híbridos são desenvolvidos com linguagens de programação não nativas ao sistema operacional. Então utiliza-se ferramentas multiplataforma, as quais ampliam os caminhos para criar um app na area.
+
+Exemplos disso são linguagens OO usadas nos smartphones, sendo as mais comuns JAVA, C++ e C#, todas são utilizadas pelas quatro maiores plataformas de dispositivos móveis – iPhone, Android, Windows e BlackBerry que compõem 99% do mercado atual
+
+
