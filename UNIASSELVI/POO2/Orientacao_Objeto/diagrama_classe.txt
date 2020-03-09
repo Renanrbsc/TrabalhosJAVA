@@ -1,0 +1,9 @@
+# Pessoa
+
+- nomeCompleto
+- idade
+
++ getNomeCompleto
++ setNomeCompleto(nomeCompleto: String): void
++ getIdade(): int
++ getIdade (idade: int): void
